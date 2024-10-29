@@ -10,4 +10,6 @@ public class Cat extends Pets {
     public void speak(){
         System.out.println("the cat meows");
     }
+
+
 }

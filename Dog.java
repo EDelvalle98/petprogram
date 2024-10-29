@@ -1,6 +1,6 @@
 package petcode;
 
-public class Dog extends Pets{
+public class Dog extends Pets {
 
     public Dog(String name) {
         super(name);
@@ -10,4 +10,6 @@ public class Dog extends Pets{
     public void speak(){
         System.out.println("the dog goes bark bark");
     }
+
+
 }

@@ -1,6 +1,7 @@
 package petcode;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class PetProgram {
@@ -38,11 +39,26 @@ public class PetProgram {
 
             pets.add(pet);
         }
+
+        Collections.sort(pets);
+        for (Pets pet1 : pets) {
+            System.out.println(pet1);
+        }
+
+        System.out.println();
+
+        Collections.sort(pets, new PetComparator());
+        for (Pets pet2: pets) {
+            System.out.println(pet2);
+        }
+
 //Print a list of all pets and their corresponding sounds.
         System.out.println("\nYour pets:");
         for (Pets pet : pets) {
             System.out.println(pet.getName() + ": ");
             pet.speak();
         }
+
+        scanner.close();
     }
 }
